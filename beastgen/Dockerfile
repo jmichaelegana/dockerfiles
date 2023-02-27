@@ -1,7 +1,7 @@
 FROM	ubuntu:18.04
 
 RUN     apt-get update \
-&&      apt-get install -y openjdk-8-jre openjdk-8-jdk\
+&&      apt-get install -y openjdk-8-jre openjdk-8-jdk python3\
 &&      apt-get install -y wget unzip \
 &&	    wget https://github.com/beast-dev/beast-mcmc/releases/download/v1.10.5pre_thorney/BEASTGen_v1.0.3pre_thorney.zip \
 &&      unzip BEASTGen_v1.0.3pre_thorney.zip \
